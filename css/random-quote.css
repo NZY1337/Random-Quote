@@ -1,0 +1,85 @@
+
+
+/* https://css-tricks.com/css-techniques-and-effects-for-knockout-text/ */
+
+
+
+.bg-hero {
+    background-image: url(../pics/adult.jpg);
+    background-size:cover;
+    background-position: center center;
+    width:100%;
+    height:82vh;
+   position: relative;
+}
+
+.gradient {
+    position:absolute;
+    width:92%;
+    height:82vh;
+    top:2rem;
+    left:2rem;
+    background-image: linear-gradient(#ddd6f3,#faaca8);
+    z-index: -11111;
+}
+
+#title {
+    /* color:white; */
+    background: rgb(59, 2, 6);
+    font-weight: 800;
+    /* text-shadow: 0 0 9px white; */
+    font-size: 2.2rem;
+    line-height: 3rem;
+    mix-blend-mode: multiply;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    /* animation:  glow 3s infinite; */
+}
+
+.div-border {
+    border:4px double white;
+    margin:2rem;
+    position: absolute;
+    width:calc(100% - 4rem);
+    height:calc(100% - 4rem);
+}
+
+#random-btn {
+    border: 2px solid red;
+    position:absolute;
+    bottom:-2rem;
+    right:0;
+    border-radius:50%;
+    padding: .7rem 2rem;
+    border-radius:16rem;
+    color:red;
+    background:transparent;
+    cursor: pointer;
+    transform:scale(1);
+    transition:transform .2s;
+}
+
+#random-btn:hover {
+    background:red;color:white;
+    transform:scale(1.05);
+}
+
+@keyframes glow {
+    0% {
+      text-shadow:  0 0 10px white;
+    }
+    
+    15% {
+      text-shadow: 2px 2px 10px rgba(255, 255, 255, 1),
+                   -2px -2px 10px rgba(255, 255, 255, 1);
+    }
+    30% {
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, .7),
+                   -2px -2px 4px rgba(255, 255, 255, .7);
+    }
+    50% {
+      text-shadow: 20px 20px 50px rgba(255, 255, 255, .5),
+                   -20px -20px 50px rgba(255, 255, 255, .5);
+    }
+}
+
