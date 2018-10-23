@@ -78,7 +78,7 @@
 }
 
 #random-btn:hover {
-    background:red;color:white;
+    background:red;color:white; 
     transform:scale(1.05);
 }
 
