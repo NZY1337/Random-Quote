@@ -59,3 +59,13 @@ BTN.addEventListener('click', function(){
     author.innerHTML = QUOTES[randomQuote].author;
 });
 
+
+console.log(QUOTES);
+
+QUOTES.push({quote: 'hellow', author: 'Schumacher'});
+
+function addQuote(quote, author) {
+    QUOTES.push({quote, author});
+}
+
+addQuote('Maikelele', 'Noir');
