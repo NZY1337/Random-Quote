@@ -9,28 +9,37 @@
     background-size:cover;
     background-position: center center;
     width:100%;
-    height:82vh;
+    height:90vh;
    position: relative;
 }
 
 .gradient {
     position:absolute;
     width:92%;
-    height:82vh;
+    height:94vh;
     top:2rem;
     left:2rem;
     background-image: linear-gradient(#ddd6f3,#faaca8);
     z-index: -11111;
 }
 
+
+.overlay {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background: rgb(59, 2, 6, .3);
+    top:0;
+    left:0;
+}
+
 #title {
-    /* color:white; */
-    background: rgb(59, 2, 6);
+    color:     white;
     font-weight: 800;
     /* text-shadow: 0 0 9px white; */
-    font-size: 2.2rem;
-    line-height: 3rem;
-    mix-blend-mode: multiply;
+    font-size: 7rem;
+    line-height: 4.5rem;
+    mix-blend-mode:soft-light;
     text-transform: uppercase;
     letter-spacing: .2rem;
     /* animation:  glow 3s infinite; */
@@ -42,6 +51,15 @@
     position: absolute;
     width:calc(100% - 4rem);
     height:calc(100% - 4rem);
+}
+
+.overlay {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background: rgb(59, 2, 6, .4);
+    top:0;
+    left:0;
 }
 
 #random-btn {
