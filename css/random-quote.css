@@ -44,6 +44,26 @@
     /* animation:  glow 3s infinite; */
 }
 
+#tweet {
+    background:red;
+    position: absolute;
+    top:4rem;
+    right:4rem;
+    border:none;
+    cursor:pointer;
+    color:#fff;
+    padding:.4rem .8rem; 
+    transform: scale(1);
+    font-size: 14px;
+}
+
+#tweet:hover {
+    padding:.4rem .8rem; 
+    border-radius:16rem;
+}
+
+
+
 .div-border {
     border:4px double white;
     margin:2rem;
