@@ -4,8 +4,6 @@ let author = document.getElementById('author');
 let mainQuote = document.getElementById('quote');
 const TWEET = document.getElementById('tweet');
 
-
-
 BTN.addEventListener('click', ajaxRequest);
 
 function ajaxRequest() {
@@ -31,17 +29,7 @@ outputData = (text, quote) => {
     author.innerText = quote.quoteAuthor;
 }
 
-
-
-let newTweet = 'Hy this is a new tweet';
-const twitterURL = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(newTweet);
-
-
 TWEET.addEventListener('click', function(event){
+     let twitterURL = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(mainQuote.innerText);
      window.open(twitterURL);
 });
-
-
-
-
-
