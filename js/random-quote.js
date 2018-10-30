@@ -29,7 +29,11 @@ outputData = (text, quote) => {
     author.innerText = quote.quoteAuthor;
 }
 
+
 TWEET.addEventListener('click', function(event){
-     let twitterURL = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(mainQuote.innerText);
+    let twitterURL = "https://twitter.com/intent/tweet?text=" +
+         encodeURIComponent(`${mainQuote.innerText} \n\n - ${author.innerText}`);
      window.open(twitterURL);
 });
+
+ajaxRequest();
